@@ -12,7 +12,7 @@
             $_SESSION["favanimal"] = "cat";
             $_SESSION["favanime"] = "Grand Blue";
             echo "Session variables are set.<br>";
-            echo "Color : '". $_SESSION["favcolor"]. "'<br> Animal : '". $_SESSION["favanimal"] . "'<br>". $_SESSION["favanime"] . "'";
+            echo "Color : '". $_SESSION["favcolor"]. "'<br> Animal : '". $_SESSION["favanimal"] . "'<br> Anime :    ". $_SESSION["favanime"] . "'";
         ?>
     </body>
 </html>
