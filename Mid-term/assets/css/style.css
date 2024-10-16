@@ -1,60 +1,200 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-.nav-buttons{
-    margin-left: 60%;
-    
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+.nav-buttons {
+  margin-left: 35%;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Roboto';
+body {
+  font-family: "Roboto", sans-serif;
 }
 
-h1{
-    font-size: 2.5rem;
-    font-weight: 700;
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
-h2{
-    font-size: 1.8rem;
-    font-weight: 600;
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
-h3{
-    font-size: 1.5rem;
-    font-weight: 500;
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
-h4{
-    font-size: 1.2rem;
-    font-weight: 400;
+h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
-h5{
-    font-size: 1rem;
-    font-weight: 300;
+h5 {
+  font-size: 1rem;
+  font-weight: 300;
 }
 
-h6{
-    color: #D8D8D8;
+h6 {
+  color: #d8d8d8;
 }
 
-
-.navbar{
-    font-size: 16px;
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important ;
-    top: 0;
-    left: 0;
+button {
+  font-size: 1rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  background-color: cadetblue;
+  color: blanchedalmond;
+  padding: 13px 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s ease;
 }
 
-.navbar-light .navbar-nav .nav-link{
-    padding : 0 20px;
-    color: #000;
-    transition: 0.4s ease;
+button:hover {
+  color: #000;
+  background-color: crimson;
 }
 
+.navbar {
+  font-size: 16px;
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important ;
+  top: 0;
+  left: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  padding: 0 20px;
+  color: #000;
+  transition: 0.4s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar i.active {
+  color: crimson;
+}
+
+.navbar i {
+  font-size: 1.1rem;
+  padding: 0 7px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+@media only screen and (max-width: 990px) {
+  .nav-buttons {
+    margin: 10px;
+  }
+
+  .nav-buttons ul {
+    margin: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .nav-buttons ul .fas {
+    margin: 20px 5px 10px 20px;
+  }
+}
+
+#home {
+  color: #fff;
+  background-image: url(/assets/imgs/book.jpg);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position-y: -300px;
+  align-items: flex-start;
+  background-blend-mode: saturation;
+}
+
+#home span {
+  color: crimson;
+}
+
+#new .one img {
+  width: 100%;
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#new .one {
+  position: relative;
+}
+
+#new .one .details {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  align-items: center;
+  opacity: 0.8;
+  transition: 0.4s ease;
+}
+
+#new .one .details:hover {
+   background-color: rgb(250, 174, 189);
+}
+
+.text-uppercase {
+  font-size: 1rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  background-color: cadetblue;
+  color: blanchedalmond;
+  padding: 13px 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.text-uppercase:hover  {
+  color: #000;
+  
+  background-color: crimson;
+}
+
+#new .one:nth-child(1) .details {  
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+
+#new .one:nth-child(2) .details {  
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#new .one:nth-child(3) .details {  
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+}
