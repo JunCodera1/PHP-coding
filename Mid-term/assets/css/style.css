@@ -66,6 +66,7 @@ button:hover {
   padding-bottom: 2rem !important ;
   top: 0;
   left: 0;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -87,6 +88,12 @@ button:hover {
   cursor: pointer;
   font-weight: 500;
   transition: 0.3s ease;
+}
+
+.navbar .brand{
+    color: crimson;
+    margin: 3px 5px;
+    font-size: 1.5rem;
 }
 
 @media only screen and (max-width: 990px) {
@@ -153,7 +160,7 @@ button:hover {
 }
 
 #new .one .details:hover {
-   background-color: rgb(250, 174, 189);
+  background-color: rgb(250, 174, 189);
 }
 
 .text-uppercase {
@@ -169,32 +176,181 @@ button:hover {
   transition: 0.5s ease;
 }
 
-.text-uppercase:hover  {
+.text-uppercase:hover {
   color: #000;
-  
+
   background-color: crimson;
 }
 
-#new .one:nth-child(1) .details {  
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: start;
+#new .one:nth-child(1) .details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
 }
 
-#new .one:nth-child(2) .details {  
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+#new .one:nth-child(2) .details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#new .one:nth-child(3) .details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: end;
+}
+
+/* Product */
+
+.product {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.product img {
+  transition: 0.4s all;
+}
+
+.product:hover img {
+  opacity: 0.5;
+}
+
+.product .buy-btn {
+  background-color: crimson;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: 0.3s all;
+}
+
+.product:hover .buy-btn {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+hr {
+  width: 30px;
+  height: 3px !important;
+  opacity: 1 !important;
+  background-color: crimson;
+}
+
+.star {
+  padding: 10px 0;
+}
+
+.star i {
+  font-size: 1rem;
+  color: goldenrod;
+}
+
+#banner {
+  background-image: url("/assets/imgs/book.jpg");
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#banner h1 {
+  color: crimson;
+}
+
+#banner button {
+  background-color: rgb(221, 74, 104);
+}
+
+#banner button:hover {
+  background-color: #826e6e;
+}
+
+footer h5 {
+  color: #d8d8d8;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.p-address {
+  color: #d8d8d8;
+}
+
+footer{
+    background-color: #000000d2;
+}
+
+footer .copyright  a{
+    color: #000;
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    display: inline-block;
     text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    margin: 0 5px;
 }
 
-#new .one:nth-child(3) .details {  
+footer .copyright a:hover {
+    color: #fff;
+    background-color: crimson;
+}
+
+footer p{
+    color: #fff;
+}
+
+.p-uppercase {
+    text-transform: uppercase;
+}
+
+.pay-logo{
+    background-color: #fff;
+    padding: 10px;
+}
+
+footer .copyright img{
+    width: 20%;
+}
+
+.small-img-group{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-end;
-    text-align: end;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.single-product input:focus{
+    outline: none;
+}
+
+.single-product .buy-btn{
+    background-color: rgb(244, 103, 131);
+    opacity: 1;
+    transition: 0.4s all; 
+}
+
+.single-product .buy-btn:hover{
+    background-color: #826e6e;
 }
