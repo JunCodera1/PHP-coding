@@ -75,99 +75,37 @@
       </div>
     </nav>
 
-    <!-- Cart Items -->
-    <section class="cart container my-5 py-5">
-      <div class="container mt-5">
-        <h2 class="font-weight-bold">Your Cart</h2>
-        <hr />
+    <!-- Login -->
+    <section class="my-5 py-5">
+      <div class="container text-center mt-3 pt-5">
+        <h2 class="form-weight-bold">Login</h2>
+        <hr class="mx-auto" />
       </div>
-
-      <table class="mt-5 pt-5">
-        <tr>
-          <th>Product</th>
-          <th>Quantity</th>
-          <th>Subtotal</th>
-        </tr>
-        <tr>
-          <td>
-            <div class="product-info">
-              <img src="assets/imgs/feature-1.jpg" alt="" />
-              <div>
-                <p>Java Book</p>
-                <small><span>$</span> 149.99</small>
-                <br />
-                <a href="#" class="remove-btn">Remove</a>
-              </div>
-            </div>
-          </td>
-          <td>
-            <input type="number" value="1" />
-            <a href="#" class="edit-btn">Edit</a>
-          </td>
-          <td>
-            <span>$</span>
-            <span class="product-price">149.99</span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div class="product-info">
-              <img src="assets/imgs/feature-1.jpg" alt="" />
-              <div>
-                <p>Java Book</p>
-                <small><span>$</span> 149.99</small>
-                <br />
-                <a href="#" class="remove-btn">Remove</a>
-              </div>
-            </div>
-          </td>
-          <td>
-            <input type="number" value="1" />
-            <a href="#" class="edit-btn">Edit</a>
-          </td>
-          <td>
-            <span>$</span>
-            <span class="product-price">149.99</span>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <div class="product-info">
-              <img src="assets/imgs/feature-1.jpg" alt="" />
-              <div>
-                <p>Java Book</p>
-                <small><span>$</span> 149.99</small>
-                <br />
-                <a href="#" class="remove-btn">Remove</a>
-              </div>
-            </div>
-          </td>
-          <td>
-            <input type="number" value="1" />
-            <a href="#" class="edit-btn">Edit</a>
-          </td>
-          <td>
-            <span>$</span>
-            <span class="product-price">149.99</span>
-          </td>
-        </tr>
-      </table>
-
-      <div class="cart-total">
-        <table>
-          <tr>
-            <td>Subtotal</td>
-            <td>$149.99</td>
-          </tr>
-          <tr>
-            <td>Total</td>
-            <td>$149.99</td>
-          </tr>
-        </table>
-      </div>
-
-      <div class="checkout-container">
-        <button class="btn-checkout">Checkout</button>
+      <div class="mx-auto container">
+        <form action="#" id="login-form">
+          <div class="form-group">
+            <label for="">Email</label>
+            <input
+              type="text"
+              class="form-control"
+              id="login-email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+        </form>
+        <div class="form-group">
+            <label for="">Email</label>
+            <input
+              type="password"
+              class="form-control"
+              id="login-pass"
+              name="password"
+              placeholder="Email"
+              required
+            />
+          </div>
       </div>
     </section>
 
@@ -261,6 +199,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- Bootstrap JS Bundle -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
